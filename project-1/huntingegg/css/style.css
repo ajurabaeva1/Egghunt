@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+
+  
+}
+body{
+background-image: url(../images/giphy.gif);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+a {
+  color: white;
+  font-size: 60px;
+}
+
+.title {
+  margin: 1em;
+  text-align: center;
+
+  background-image: url(../images/egg-hunt.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70px;
+
+/*background-size: cover;*/
+}
+.game-board {
+  width: 800px;
+  height: 400px;
+  background-color: #00dfff;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+#score-box {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  margin-top: 20px
+  background-color: solid white;
+  text-align: center;
+  margin-top: 500px;
+  margin-left: 450px;
+
+}
+.grid {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  /*  display: flex;
+  justify-content: center;
+  align-items: center;*/
+  border: 1px solid #2720ff ;
+  display: inline-block;
+  }
+
+.snake {
+  position:absolute;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  /*background-color:red;*/
+  background-image: url(../images/animm.gif);
+  transition: top 0.01s ease-in-out, left 0.01s ease-in-out;
+  list-style-type: none;
+  /*top: 50px;
+  left: 50px;*/
+}
+
+.egg {
+  position:absolute;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  background-image:url(../images/egg.png);
+}
+.welcome-transition{
+  color: white;
+  text-align: center;
+  margin-top: 90px;
+}
+
